@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="1002.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.controller.FlightController">
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" pannable="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <TableView fx:id="tabFlight" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" />
+         </content>
+      </ScrollPane>
+   </center>
+   <left>
+      <VBox prefHeight="597.0" prefWidth="372.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane hgap="10.0" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="185.0" minWidth="10.0" prefWidth="185.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="198.0" minWidth="10.0" prefWidth="157.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Начало периода" />
+                  <Label text="Конец периода" GridPane.columnIndex="1" />
+                  <Label text="Страна вылета" GridPane.rowIndex="2" />
+                  <Label text="Аэропорт вылета" GridPane.rowIndex="6" />
+                  <Label text="Страна прибытия" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Аэропорт прибытия" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <DatePicker fx:id="dateFrom" onAction="#loadFlights" GridPane.rowIndex="1" />
+                  <DatePicker fx:id="dateTo" onAction="#loadFlights" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="countryFrom" prefHeight="31.0" prefWidth="188.0" GridPane.rowIndex="3" />
+                  <ComboBox fx:id="countryTo" prefHeight="31.0" prefWidth="196.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <ComboBox fx:id="airportFrom" prefHeight="31.0" prefWidth="188.0" GridPane.rowIndex="7" />
+                  <ComboBox fx:id="airportTo" prefHeight="31.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Button mnemonicParsing="false" onAction="#clearFilter" prefHeight="31.0" prefWidth="192.0" text="Очистить" GridPane.rowIndex="9" />
+                  <Button mnemonicParsing="false" onAction="#applyFilter" prefHeight="31.0" prefWidth="192.0" text="Применить" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Label text="Компания" GridPane.rowIndex="8" />
+                  <ComboBox fx:id="company" prefHeight="31.0" prefWidth="182.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label text="Город вылета" GridPane.rowIndex="4" />
+                  <Label text="Город прилета" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <ComboBox fx:id="cityFrom" prefHeight="31.0" prefWidth="187.0" GridPane.rowIndex="5" />
+                  <ComboBox fx:id="cityTo" prefHeight="31.0" prefWidth="184.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" prefHeight="43.0" prefWidth="1002.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="reportStatus" />
+            <ProgressBar fx:id="progressBar" prefWidth="200.0" progress="0.0" />
+            <Button mnemonicParsing="false" onAction="#export" text="Сохранить в Excel" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets right="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>

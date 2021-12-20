@@ -1,0 +1,179 @@
+2021-10-07 15:06:49.427  INFO 7496 --- [main] com.app.BrandTest                        : Starting BrandTest using Java 11.0.7 on HomePK with PID 7496 (started by Root in H:\source\freelancehunt\alex_api\api)
+2021-10-07 15:06:49.437  INFO 7496 --- [main] com.app.BrandTest                        : No active profile set, falling back to default profiles: default
+2021-10-07 15:06:50.987  INFO 7496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-07 15:06:51.077  INFO 7496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 11 JPA repository interfaces.
+2021-10-07 15:06:52.129  INFO 7496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-10-07 15:06:52.149  INFO 7496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-07 15:06:52.149  INFO 7496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-07 15:06:52.269  INFO 7496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-07 15:06:52.269  INFO 7496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2812 ms
+2021-10-07 15:06:52.519  INFO 7496 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-07 15:06:52.589  INFO 7496 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-07 15:06:52.759  INFO 7496 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-07 15:06:53.029  INFO 7496 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-07 15:06:53.519  WARN 7496 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.DistrPromosPk
+2021-10-07 15:06:53.519  WARN 7496 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.DistrPromosPk
+2021-10-07 15:06:53.519  WARN 7496 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.ActiveAssortmentPk
+2021-10-07 15:06:53.519  WARN 7496 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.ActiveAssortmentPk
+2021-10-07 15:06:53.519  WARN 7496 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.AssortmentDiscountPk
+2021-10-07 15:06:53.529  WARN 7496 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.AssortmentDiscountPk
+2021-10-07 15:06:54.129  INFO 7496 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-07 15:06:54.139  INFO 7496 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-07 15:06:55.190  WARN 7496 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-07 15:06:57.059  INFO 7496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 49475 (http) with context path ''
+2021-10-07 15:06:57.079  INFO 7496 --- [main] com.app.BrandTest                        : Started BrandTest in 8.029 seconds (JVM running for 10.487)
+2021-10-07 15:06:57.573  INFO 7496 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-07 15:06:57.573  INFO 7496 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-07 15:06:57.573  INFO 7496 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-10-07 15:06:57.623  INFO 7496 --- [http-nio-auto-1-exec-1] com.app.api.controller.BrandsController  : call GET\brand\11  from 127.0.0.1
+2021-10-07 15:06:57.934  INFO 7496 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-07 15:07:40.783  INFO 9728 --- [main] com.app.BrandTest                        : Starting BrandTest using Java 11.0.7 on HomePK with PID 9728 (started by Root in H:\source\freelancehunt\alex_api\api)
+2021-10-07 15:07:40.783  INFO 9728 --- [main] com.app.BrandTest                        : No active profile set, falling back to default profiles: default
+2021-10-07 15:07:41.635  INFO 9728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-07 15:07:41.725  INFO 9728 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 11 JPA repository interfaces.
+2021-10-07 15:07:42.637  INFO 9728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-10-07 15:07:42.647  INFO 9728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-07 15:07:42.657  INFO 9728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-07 15:07:42.787  INFO 9728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-07 15:07:42.787  INFO 9728 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1974 ms
+2021-10-07 15:07:43.007  INFO 9728 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-07 15:07:43.057  INFO 9728 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-07 15:07:43.187  INFO 9728 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-07 15:07:43.417  INFO 9728 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-07 15:07:43.867  WARN 9728 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.DistrPromosPk
+2021-10-07 15:07:43.867  WARN 9728 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.DistrPromosPk
+2021-10-07 15:07:43.867  WARN 9728 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.ActiveAssortmentPk
+2021-10-07 15:07:43.867  WARN 9728 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.ActiveAssortmentPk
+2021-10-07 15:07:43.867  WARN 9728 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.AssortmentDiscountPk
+2021-10-07 15:07:43.867  WARN 9728 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.AssortmentDiscountPk
+2021-10-07 15:07:44.367  INFO 9728 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-07 15:07:44.377  INFO 9728 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-07 15:07:45.337  WARN 9728 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-07 15:07:47.093  INFO 9728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 49495 (http) with context path ''
+2021-10-07 15:07:47.103  INFO 9728 --- [main] com.app.BrandTest                        : Started BrandTest in 6.657 seconds (JVM running for 8.504)
+2021-10-07 15:07:47.454  INFO 9728 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-07 15:08:27.900  INFO 7988 --- [main] com.app.BrandTest                        : Starting BrandTest using Java 11.0.7 on HomePK with PID 7988 (started by Root in H:\source\freelancehunt\alex_api\api)
+2021-10-07 15:08:27.900  INFO 7988 --- [main] com.app.BrandTest                        : No active profile set, falling back to default profiles: default
+2021-10-07 15:08:28.702  INFO 7988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-07 15:08:28.782  INFO 7988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 11 JPA repository interfaces.
+2021-10-07 15:08:29.662  INFO 7988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-10-07 15:08:29.672  INFO 7988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-07 15:08:29.672  INFO 7988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-07 15:08:29.792  INFO 7988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-07 15:08:29.792  INFO 7988 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1872 ms
+2021-10-07 15:08:30.012  INFO 7988 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-07 15:08:30.072  INFO 7988 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-07 15:08:30.212  INFO 7988 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-07 15:08:30.442  INFO 7988 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-07 15:08:30.924  WARN 7988 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.DistrPromosPk
+2021-10-07 15:08:30.924  WARN 7988 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.DistrPromosPk
+2021-10-07 15:08:30.924  WARN 7988 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.ActiveAssortmentPk
+2021-10-07 15:08:30.924  WARN 7988 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.ActiveAssortmentPk
+2021-10-07 15:08:30.924  WARN 7988 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.AssortmentDiscountPk
+2021-10-07 15:08:30.924  WARN 7988 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.AssortmentDiscountPk
+2021-10-07 15:08:31.374  INFO 7988 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-07 15:08:31.384  INFO 7988 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-07 15:08:32.434  WARN 7988 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-07 15:08:34.146  INFO 7988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 49507 (http) with context path ''
+2021-10-07 15:08:34.156  INFO 7988 --- [main] com.app.BrandTest                        : Started BrandTest in 6.626 seconds (JVM running for 8.481)
+2021-10-07 15:08:34.517  INFO 7988 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-07 15:17:14.267  INFO 6460 --- [main] com.app.api.service.BrandsServiceTest    : Starting BrandsServiceTest using Java 11.0.7 on HomePK with PID 6460 (started by Root in H:\source\freelancehunt\alex_api\api)
+2021-10-07 15:17:14.270  INFO 6460 --- [main] com.app.api.service.BrandsServiceTest    : No active profile set, falling back to default profiles: default
+2021-10-07 15:17:15.262  INFO 6460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-07 15:17:15.352  INFO 6460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 11 JPA repository interfaces.
+2021-10-07 15:17:16.272  INFO 6460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-10-07 15:17:16.282  INFO 6460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-07 15:17:16.282  INFO 6460 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-07 15:17:16.402  INFO 6460 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-07 15:17:16.402  INFO 6460 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2092 ms
+2021-10-07 15:17:16.622  INFO 6460 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-07 15:17:16.682  INFO 6460 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-07 15:17:16.823  INFO 6460 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-07 15:17:17.106  INFO 6460 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-07 15:17:17.602  WARN 6460 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.DistrPromosPk
+2021-10-07 15:17:17.602  WARN 6460 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.DistrPromosPk
+2021-10-07 15:17:17.602  WARN 6460 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.ActiveAssortmentPk
+2021-10-07 15:17:17.602  WARN 6460 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.ActiveAssortmentPk
+2021-10-07 15:17:17.602  WARN 6460 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.AssortmentDiscountPk
+2021-10-07 15:17:17.602  WARN 6460 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.AssortmentDiscountPk
+2021-10-07 15:17:18.072  INFO 6460 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-07 15:17:18.082  INFO 6460 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-07 15:17:19.024  WARN 6460 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-07 15:17:20.755  INFO 6460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55477 (http) with context path ''
+2021-10-07 15:17:20.775  INFO 6460 --- [main] com.app.api.service.BrandsServiceTest    : Started BrandsServiceTest in 7.028 seconds (JVM running for 8.421)
+2021-10-07 15:17:21.406  INFO 6460 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-07 15:17:48.418  INFO 7828 --- [main] com.app.api.service.BrandsServiceTest    : Starting BrandsServiceTest using Java 11.0.7 on HomePK with PID 7828 (started by Root in H:\source\freelancehunt\alex_api\api)
+2021-10-07 15:17:48.423  INFO 7828 --- [main] com.app.api.service.BrandsServiceTest    : No active profile set, falling back to default profiles: default
+2021-10-07 15:17:49.363  INFO 7828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-07 15:17:49.463  INFO 7828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 11 JPA repository interfaces.
+2021-10-07 15:17:50.393  INFO 7828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-10-07 15:17:50.403  INFO 7828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-07 15:17:50.403  INFO 7828 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-07 15:17:50.543  INFO 7828 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-07 15:17:50.543  INFO 7828 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2098 ms
+2021-10-07 15:17:50.753  INFO 7828 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-07 15:17:50.803  INFO 7828 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-07 15:17:50.933  INFO 7828 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-07 15:17:51.184  INFO 7828 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-07 15:17:51.699  WARN 7828 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.DistrPromosPk
+2021-10-07 15:17:51.699  WARN 7828 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.DistrPromosPk
+2021-10-07 15:17:51.699  WARN 7828 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.ActiveAssortmentPk
+2021-10-07 15:17:51.709  WARN 7828 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.ActiveAssortmentPk
+2021-10-07 15:17:51.709  WARN 7828 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.AssortmentDiscountPk
+2021-10-07 15:17:51.709  WARN 7828 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.AssortmentDiscountPk
+2021-10-07 15:17:52.199  INFO 7828 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-07 15:17:52.199  INFO 7828 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-07 15:17:53.120  WARN 7828 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-07 15:17:54.708  INFO 7828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55498 (http) with context path ''
+2021-10-07 15:17:54.718  INFO 7828 --- [main] com.app.api.service.BrandsServiceTest    : Started BrandsServiceTest in 6.808 seconds (JVM running for 8.171)
+2021-10-07 15:17:55.108  INFO 7828 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-07 15:18:52.970  INFO 6972 --- [main] com.app.api.service.BrandsServiceTest    : Starting BrandsServiceTest using Java 11.0.7 on HomePK with PID 6972 (started by Root in H:\source\freelancehunt\alex_api\api)
+2021-10-07 15:18:52.970  INFO 6972 --- [main] com.app.api.service.BrandsServiceTest    : No active profile set, falling back to default profiles: default
+2021-10-07 15:18:54.042  INFO 6972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-07 15:18:54.132  INFO 6972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 11 JPA repository interfaces.
+2021-10-07 15:18:55.033  INFO 6972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-10-07 15:18:55.043  INFO 6972 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-07 15:18:55.043  INFO 6972 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-07 15:18:55.195  INFO 6972 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-07 15:18:55.195  INFO 6972 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2195 ms
+2021-10-07 15:18:55.395  INFO 6972 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-07 15:18:55.445  INFO 6972 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-07 15:18:55.575  INFO 6972 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-07 15:18:55.805  INFO 6972 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-07 15:18:56.265  WARN 6972 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.DistrPromosPk
+2021-10-07 15:18:56.265  WARN 6972 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.DistrPromosPk
+2021-10-07 15:18:56.265  WARN 6972 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.ActiveAssortmentPk
+2021-10-07 15:18:56.265  WARN 6972 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.ActiveAssortmentPk
+2021-10-07 15:18:56.265  WARN 6972 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.AssortmentDiscountPk
+2021-10-07 15:18:56.265  WARN 6972 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.AssortmentDiscountPk
+2021-10-07 15:18:56.745  INFO 6972 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-07 15:18:56.755  INFO 6972 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-07 15:18:57.745  WARN 6972 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-07 15:18:59.411  INFO 6972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60909 (http) with context path ''
+2021-10-07 15:18:59.421  INFO 6972 --- [main] com.app.api.service.BrandsServiceTest    : Started BrandsServiceTest in 6.845 seconds (JVM running for 8.338)
+2021-10-07 15:18:59.851  INFO 6972 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-07 15:20:37.095  INFO 8004 --- [main] com.app.api.service.BrandsServiceTest    : Starting BrandsServiceTest using Java 11.0.7 on HomePK with PID 8004 (started by Root in H:\source\freelancehunt\alex_api\api)
+2021-10-07 15:20:37.095  INFO 8004 --- [main] com.app.api.service.BrandsServiceTest    : No active profile set, falling back to default profiles: default
+2021-10-07 15:20:37.993  INFO 8004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-07 15:20:38.093  INFO 8004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 11 JPA repository interfaces.
+2021-10-07 15:20:39.025  INFO 8004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-10-07 15:20:39.035  INFO 8004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-07 15:20:39.035  INFO 8004 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-07 15:20:39.165  INFO 8004 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-07 15:20:39.175  INFO 8004 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2050 ms
+2021-10-07 15:20:39.385  INFO 8004 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-07 15:20:39.445  INFO 8004 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-07 15:20:39.565  INFO 8004 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-07 15:20:39.807  INFO 8004 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-10-07 15:20:40.339  WARN 8004 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.DistrPromosPk
+2021-10-07 15:20:40.339  WARN 8004 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.DistrPromosPk
+2021-10-07 15:20:40.339  WARN 8004 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.ActiveAssortmentPk
+2021-10-07 15:20:40.339  WARN 8004 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.ActiveAssortmentPk
+2021-10-07 15:20:40.339  WARN 8004 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): com.app.entity.pk.AssortmentDiscountPk
+2021-10-07 15:20:40.339  WARN 8004 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): com.app.entity.pk.AssortmentDiscountPk
+2021-10-07 15:20:40.799  INFO 8004 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-07 15:20:40.809  INFO 8004 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-07 15:20:41.740  WARN 8004 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-07 15:20:43.440  INFO 8004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60928 (http) with context path ''
+2021-10-07 15:20:43.450  INFO 8004 --- [main] com.app.api.service.BrandsServiceTest    : Started BrandsServiceTest in 6.772 seconds (JVM running for 8.311)
+2021-10-07 15:20:44.221  INFO 8004 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

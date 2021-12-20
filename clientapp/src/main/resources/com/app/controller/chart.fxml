@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.controller.ChartController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="165.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane hgap="10.0" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Начало периода" />
+                  <Label text="Окончание периода" GridPane.rowIndex="2" />
+                  <DatePicker fx:id="from" GridPane.rowIndex="1" />
+                  <DatePicker fx:id="to" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <Button mnemonicParsing="false" onAction="#apply" prefHeight="31.0" prefWidth="173.0" text="Применить" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <PieChart fx:id="pieChart" prefHeight="400.0" prefWidth="536.0" title="ТОП-5 Аэропортов" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

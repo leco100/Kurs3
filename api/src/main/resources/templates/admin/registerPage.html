@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title th:utext="${title}"></title>
+        <meta charset="UTF-8"/>
+        <link th:href="@{/bootstrap/css/bootstrap.min.css}"
+              rel="stylesheet" media="screen"/>
+        <script th:src="@{/jquery/jquery.min.js}"></script>  
+        <script th:src="@{/popper/popper.min.js}"></script>  
+        <script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>   
+        <style>
+            th, td {
+                padding: 5px;
+            }
+            td span  {
+                font-size:90%;
+                font-style: italic;
+                color: red;
+            }
+            .error {
+                color: red;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <th:block th:include="/admin/menu"></th:block>  
+        <div class=" d-flex flex-row justify-content-center align-items-center" >
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-auto">
+
+                        <h2 th:text="#{Register.Info}"> </h2>
+
+                        <div th:if="${errorMessage != null}"
+                             th:utext="${errorMessage}" class="error">...</div>
+
+                        <form th:action="@{/admin/register}" th:object="${userForm}" method="POST">
+
+                            <table>
+                                <tr>
+                                    <td th:text="#{Login}"></td>
+                                    <td><input type="text" required="required" class="form-control"  th:field="*{login}" /></td>
+                                    <td>
+                                        <span th:if="${#fields.hasErrors('login')}" th:errors="*{login}">..</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td th:text="#{First.Name}"></td>
+                                    <td><input type="text" required="required" class="form-control"  th:field="*{firstName}" /></td>
+                                    <td>
+                                        <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">..</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td th:text="#{Last.Name}"></td>
+                                    <td><input type="text" required="required" class="form-control"  th:field="*{lastName}" /></td>
+                                    <td>
+                                        <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">..</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td th:text="#{Password}"></td>
+                                    <td><input type="password" required="required" class="form-control"  th:field="*{password}" /> </td>
+                                    <td>
+                                        <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}">..</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td th:text="#{Confirm.Password}"></td>
+                                    <td><input type="password" required="required" class="form-control"  th:field="*{confirmPassword}" /> </td>
+                                    <td>
+                                        <span th:if="${#fields.hasErrors('confirmPassword')}" th:errors="*{confirmPassword}">..</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td th:text="#{Role}"></td>
+                                    <td>
+                                        <select class="form-control" required="required" th:field="*{role}">
+                                            <option th:each="r : ${roles}"
+                                                    th:value="${r.roleName}"
+                                                    th:utext="${r.name}"/>
+                                        </select></td>
+                                    <td><span th:if="${#fields.hasErrors('role')}" th:errors="*{role}">..</span></td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        <input class="btn btn-outline-primary" type="submit" th:value="#{Save.button}" />
+                                        <a class="btn btn-outline-primary" th:href="@{/admin}" th:text="#{Cancel}"></a>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

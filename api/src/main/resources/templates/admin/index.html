@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <link th:href="@{/bootstrap/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen"/>
+    <script th:src="@{/jquery/jquery.min.js}"></script>
+    <script th:src="@{/popper/popper.min.js}"></script>
+    <script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+
+</head>
+
+<body>
+<th:block th:include="/admin/menu"></th:block>
+<div class=" d-flex flex-row justify-content-center align-items-center" >
+
+    <div class="container">
+        <h2 th:text="#{Users}"></h2>
+        <table  class="table">
+            <thead class="thead-light">
+            <tr>
+                <th th:text="#{Login}"></th>
+                <th th:text="#{Role}"></th>
+                <th th:text="#{Reset.Password}"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:if="${users.empty}">
+                <td colspan="2" th:text="#{NoUserAvailable}"> </td>
+            </tr>
+            <tr th:each="user : ${users}">
+                <td style="text-align: center">
+
+                    <div>
+                        <span th:text="${user.login}">
+
+                        </span>
+                         </div>
+
+                </td>
+                <td>
+
+                        <span th:text="${user.role.info}"></span>
+
+                </td>
+                <td>
+                    <a class="btn btn-outline-primary" th:href="@{/admin/resetPassword/{login}(login=${user.login})}"><span th:text="#{Reset.Password}"></span></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+
+</html>

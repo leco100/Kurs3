@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.controller.MainController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Рейсы">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#actionFlight" text="За период" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionChart" text="ТОП-5" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Справочник">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#actionCountry" text="Страны" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionCompany" text="Компании" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionAirport" text="Аэропорты" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionAirplane" text="Модели самолетов" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Помощь">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#actionAbout" text="О программе" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <left>
+       <VBox prefHeight="502.0" prefWidth="231.0" BorderPane.alignment="CENTER">
+           <children>
+               <GridPane hgap="10.0" prefHeight="265.0" prefWidth="221.0" vgap="10.0">
+                   <columnConstraints>
+                       <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="250.0" minWidth="10.0" prefWidth="200.0" />
+                   </columnConstraints>
+                   <rowConstraints>
+                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                   </rowConstraints>
+                   <children>
+                       <Label text="Страна" />
+                       <Label text="Аэропорт" GridPane.rowIndex="4" />
+                       <ComboBox fx:id="country" prefHeight="31.0" prefWidth="250.0" GridPane.rowIndex="1" />
+                       <ComboBox fx:id="airport" prefHeight="31.0" prefWidth="230.0" GridPane.rowIndex="5" />
+                       <Label text="Города" GridPane.rowIndex="2" />
+                       <ComboBox fx:id="city" prefHeight="31.0" prefWidth="237.0" GridPane.rowIndex="3" />
+                   </children>
+               </GridPane>
+           </children>
+           <BorderPane.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+           </BorderPane.margin>
+       </VBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="29.0" prefWidth="872.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="labelInfo" textFill="#f80909">
+               <font>
+                  <Font size="19.0" />
+               </font></Label>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab closable="false" text="Отлет">
+               <content>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0">
+                     <content>
+                        <TableView fx:id="tabDeparture" prefHeight="200.0" prefWidth="200.0" />
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+          <Tab closable="false" text="Прилет">
+               <content>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0">
+                     <content>
+                        <TableView fx:id="tabArrival" prefHeight="200.0" prefWidth="200.0" />
+                     </content>
+                  </ScrollPane>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,11 @@
+com.app
+com.app.api
+com.app.api.controller
+com.app.api.service
+com.app.config
+com.app.entity
+com.app.form
+com.app.mvc
+com.app.repos
+com.app.service
+com.app.validator
